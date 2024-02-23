@@ -1,0 +1,151 @@
+@font-face {
+    font-family: PPMigra;
+    src: url(./PPMigra-Regular.fb0ee287.ttf);
+}
+
+@font-face {
+    font-family: SharpGrotesk;
+    src: url(./SharpGrotesk-Bold.164b198a.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PPMigra;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    background-color: rgb(231 228 229);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid black;
+}
+
+#text_container {
+    padding: 1.5vw;
+    background-color: rgb(231 228 229);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text_container a{
+    text-decoration: none;
+    color: black;
+    font-size: .9vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+#text_container a:nth-child(2) {
+    font-size: 2.4vw;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: PPMigra;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 70vh;
+}
+
+.textH1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: rosybrown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textH1 h1 {
+    position: relative;
+    top: 4.8vh;
+    font-size: 8.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    line-height: .8;
+    font-weight: 500;
+}
+
+.textH1 h1:nth-child(3) {
+    font-family: SharpGrotesk;
+    
+}
+
+.imgs{
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    overflow: hidden;
+    transform-origin: bottom right;
+}
+
+.imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(100%);
+}
+
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0vh;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text_cont2 h1{
+    display: inline-block;
+    margin-left: 5vw;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.images{
+    width: 30vw;
+    height: 8vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    width: 5vw;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
